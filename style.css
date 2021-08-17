@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-y:auto;
+    
+    
+}
+
+:root{
+    --font-lexend-400: 'Lexend Deca', sans-serif;
+    --font-big-shoulders-700: 'Big Shoulders Display', cursive;
+    --primary-color-orange: hsl(31, 77%, 52%);
+    --primary-color-verydark-cyan: hsl(179, 100%, 13%);
+    --primary-color-dark-cyan: hsl(184, 100%, 22%);
+    --neutral-color-transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --neutral-color-verylight-gray: hsl(0, 0%, 95%);
+}
+
+html{
+    background-color: var(--neutral-color-verylight-gray);
+}
+body{
+    width: 90%;
+    margin: auto;
+    margin-top: 5em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 2.8em;
+}
+
+img{
+    width: 50px;
+}
+
+h1{
+    font-family: var(--font-big-shoulders-700);
+    color: white;
+    font-weight: 700;
+    padding: 1em 0em;
+}
+p{
+    color: var(--neutral-color-transparent-white-paragraphs);
+    font-family: var(--font-lexend-400);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7em;
+    padding-bottom: 1.5em;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: var(--font-lexend-400);
+    font-size: 15px;
+    background-color: var(--neutral-color-verylight-gray);
+    border: none;
+    padding: 1em 2em;
+    border-radius: 50px;
+}
+
+.sedan{
+    background-color: var(--primary-color-orange);
+}
+.suvs{
+    background-color: var(--primary-color-dark-cyan);
+}
+
+.luxury{
+    background-color: var(--primary-color-verydark-cyan);
+}
+
+.btn-sedan{
+    color: var(--primary-color-orange);
+}
+
+.btn-suv{
+    color: var(--primary-color-dark-cyan);
+}
+
+.btn-luxury{
+    color: var(--primary-color-verydark-cyan);
+}
+
+.panels{
+    border-radius: 10px;
+}
+@media screen and (min-width: 768px){
+
+    .content{
+        padding: 5em;
+        padding-right: 7em;
+    }
+    img{
+        width: 80px
+    }
+    h1{
+        font-size: 42px;
+        padding: 0.8em 0em;
+    }
+
+    p{
+        font-size: 22px;
+        line-height: 2em;
+    }
+
+    button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+   
+    body{
+        display: flex;
+        flex-direction: column;
+       width: 70%;
+        height: 100%;
+        margin-top: 5em;
+  
+        
+    }
+
+    .panels{
+        display: flex;
+        align-self: center;
+
+    }
+    .content{
+        padding: 3em;
+        padding-right: 5em;
+        
+    }
+    img{
+        width:50px
+    }
+    h1{
+        font-size: 32px;
+
+    }
+
+    p{
+        font-size: 15px;
+        line-height: 2em;
+    }
+
+    button{
+        font-size: 15px;
+        margin-top: 5em;
+
+    }
+    button:hover{
+        border: 1px solid white;
+        background-color: hsla(0, 0%, 100%, 0);
+        cursor: pointer;
+        color: white;
+    }
+
+    
+}
+
+
